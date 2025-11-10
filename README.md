@@ -24,3 +24,18 @@ System Features:-
 3. Responsive design (Desktop & mobile friendly).
 4. Persistent sessions (For both admins & members).
 
+## Project Setup & Execution
+Local Setup
+1.	Clone the repository:
+   bash
+    git clone https://github.com/shivanie07/Trainix-Gym-Management-System
+2.	Open the project in VS Code.
+3.	Start firebase emulators:
+   bash
+    firebase emulators:start
+4.	Open index.html in a browser.
+Emulator URLs
+•	Auth Emulator: http://localhost:9099
+•	Firestore Emulator: http://localhost:8080
+   
+
