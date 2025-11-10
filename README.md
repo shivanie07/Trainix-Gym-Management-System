@@ -24,6 +24,3 @@ System Features:-
 3. Responsive design (Desktop & mobile friendly).
 4. Persistent sessions (For both admins & members).
 
-## Setup & Run (Local)
-1. Clone or download the repository:
-
