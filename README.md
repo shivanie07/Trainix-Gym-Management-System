@@ -25,7 +25,9 @@ System Features:-
 4. Persistent sessions (For both admins & members).
 
 ## Project Setup & Execution
-Local Setup
+live site link:  https://shivanie07.github.io/Trainix-Gym-Management-System/
+
+Local Setup(Optional)
 1.	Clone the repository:
    bash
     git clone https://github.com/shivanie07/Trainix-Gym-Management-System
