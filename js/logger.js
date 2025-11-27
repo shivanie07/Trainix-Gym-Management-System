@@ -35,8 +35,8 @@ export function logError(message, error) {
 // Sanitize objects before saving
 function sanitizeMeta(meta) {
     try {
-        return JSONparse(
-            JSONstringify(meta, (key, value) => (value === undefined ? null : value))
+        return JSON.parse(
+            JSON.stringify(meta, (key, value) => (value === undefined ? null : value))
         );
     } catch {
         return { info: "Meta sanitization failed" };
