@@ -1,22 +1,69 @@
-/* Responsive Design  */
 @media (max-width: 768px) {
     .charts {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .header-container nav a {
         margin-left: 10px;
+        font-size: 14px;
     }
 
     .container {
+        flex-direction: column;
         padding: 16px;
     }
 
     .login-card {
         width: 90%;
+        margin: 0 auto;
+    }
+
+    .list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .modal-card {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    section#admin, section#member{
+        padding: 16px;
+    }
+
+    canvas{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .member-list, .bill-list {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .member-list table, .bill-list table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .member-list th, .member-list td, .bill-list th, .bill-list td {
+        font-size: 14px;
+        padding: 8px;
+        text-align: left;
     }
 }
-
 /* Root Styles */
 :root {
     /* Color palette */
@@ -46,9 +93,6 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-body {
     margin: 0;
     padding-bottom: 60px;
     background: var(--bg);
@@ -66,6 +110,8 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header/Navbar */
@@ -90,18 +136,6 @@ main {
     color: white;
 }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .logo {
     font-size: 1.7rem;
     font-weight: 700;
@@ -111,6 +145,7 @@ main {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -140,6 +175,17 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Sections */
@@ -211,14 +257,6 @@ nav a:hover::after {
 }
 
 /* Login/Role Selection Card */
-.role-select {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
 .login-card {
     background: var(--card);
     box-shadow: var(--shadow);
@@ -233,6 +271,14 @@ nav a:hover::after {
 
 .login-card:hover {
     transform: scale(1.02);
+}
+
+.role-select {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 /* Lists */
